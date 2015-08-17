@@ -76,7 +76,7 @@
 				<div id="update_avail" class='row form-group hide'>
 				<section class="col col-xs-12">
 					<label style="font-size:24px;">Update Available</label>
-					<button style="background-color: #EF8113;font-size:24px;" onclick="navigator.app.loadUrl('http://wave2dev.elasticbeanstalk.com/app/SEDARWAVE.apk', { openExternal:true });" class="btn btn-sm" >Update Now</button>
+					<button style="background-color: #EF8113;font-size:24px;" onclick="navigator.app.loadUrl('http://wave.elasticbeanstalk.com/app/SEDARWAVE.apk', { openExternal:true });" class="btn btn-sm" >Update Now</button>
 						
 				</section>
 				</div>
@@ -181,7 +181,7 @@
 	var name='wave';
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product_count.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_product_count.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -222,7 +222,7 @@ function product_sync() {
 	$("#data_update_status").removeClass("hide");
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_product.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -266,7 +266,7 @@ function product_sync1() {
 	$("#data_update_status").removeClass("hide");
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product1.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_product1.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -311,7 +311,7 @@ function product_sync2() {
 	$("#data_update_status").removeClass("hide");
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product2.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_product2.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -356,7 +356,7 @@ function product_sync3() {
 	$("#data_update_status").removeClass("hide");
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product3.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_product3.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -401,7 +401,7 @@ function product_sync4() {
 	$("#data_update_status").removeClass("hide");
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product4.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_product4.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -470,7 +470,7 @@ $(document).ready(function(){
 	var name='wave';
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_modified_product.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_modified_product.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -514,7 +514,7 @@ $(document).ready(function(){
 	var name='wave';
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_user.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_user.php',
 		data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -541,7 +541,7 @@ $(document).ready(function(){
 	var name='wave';
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_fabric.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_fabric.php',
 		 data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -566,7 +566,7 @@ $(document).ready(function(){
 	var name='wave';
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product_possible.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_product_possible.php',
 		 data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -591,7 +591,7 @@ $(document).ready(function(){
 	var name='wave';
 	$.ajax({
 		type: "POST",
-		url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_showroom.php',
+		url: 'http://wave.elasticbeanstalk.com/app/ajax_sync_showroom.php',
 		 data : 'uname='+name ,
 		dataType:"json",
 		processData: false,
@@ -650,7 +650,7 @@ function updatecheck(){
 	document.getElementById("app_ver").innerHTML = appcode;
 	$.ajax({
 		type: "POST",
-		url: "http://wave2dev.elasticbeanstalk.com/app/ajax_update.php",
+		url: "http://wave.elasticbeanstalk.com/app/ajax_update.php",
 		data :  'appcode='+appcode,
 		dataType: "json",
 		processData: false,
@@ -677,7 +677,7 @@ function admin_user(){
 	//alert(timestamp);
 	$.ajax({
 		type: "POST",
-		url: "http://wave2dev.elasticbeanstalk.com/app/ajax_admin_user.php",
+		url: "http://wave.elasticbeanstalk.com/app/ajax_admin_user.php",
 		data :  'user_name='+user_name+'&showroom_name='+showroom_name+'&appcode='+appcode+'&user_id='+user_id+'&time_stamp='+timestamp,
 		dataType: "json",
 		processData: false,
